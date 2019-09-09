@@ -2,59 +2,66 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                <div class="card card-signin my-5">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Sign In</h5>
-                        <form class="form-signin">
-                            <div class="form-label-group">
+                <div class="card mt-5">
+                    <article class="card-body">
+                        <router-link class="float-right btn btn-outline-primary" to="/login">Sign in</router-link>
+                        <h4 class="card-title mb-4 mt-1">Sign up</h4>
+                        <form>
+                            <div class="form-group">
+                                <label>Your first name</label>
                                 <input
+                                    name="fistname"
+                                    class="form-control"
+                                    placeholder="First name"
                                     type="text"
-                                    id="inputFirstName"
-                                    class="form-control"
-                                    placeholder="First Name"
-                                    required
-                                    autofocus
                                 />
-                                <label for="inputEmail">First name</label>
                             </div>
-                            <div class="form-label-group">
+                            <div class="form-group">
+                                <label>Your last name</label>
                                 <input
+                                    name="lastname"
+                                    class="form-control"
+                                    placeholder="Last name"
+                                    type="text"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label>Your email</label>
+                                <input
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="Email"
                                     type="email"
-                                    id="inputEmail"
-                                    class="form-control"
-                                    placeholder="Email address"
-                                    required
                                 />
-                                <label for="inputEmail">Email address</label>
                             </div>
-
-                            <div class="form-label-group">
+                            <!-- form-group// -->
+                            <div class="form-group">
+                                <label>Your password</label>
                                 <input
-                                    type="password"
-                                    id="inputConfirmPassword"
                                     class="form-control"
-                                    placeholder="Confirm Password"
-                                    required
+                                    placeholder="******"
+                                    name="password"
+                                    type="password"
                                 />
-                                <label for="inputPassword">Confirm Password</label>
                             </div>
-                            <div class="form-label-group">
+                            <!-- form-group// -->
+                            <div class="form-group">
+                                <label>Confirm password</label>
                                 <input
-                                    type="password"
-                                    id="inputPassword"
                                     class="form-control"
-                                    placeholder="Password"
-                                    required
+                                    placeholder="******"
+                                    name="confirmPassword"
+                                    type="password"
                                 />
-                                <label for="inputPassword">Password</label>
                             </div>
+                            <!-- form-group// -->
 
-                            <button
-                                class="btn btn-lg btn-primary btn-block text-uppercase"
-                                type="submit"
-                            >Sign Up</button>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+                            </div>
+                            <!-- form-group// -->
                         </form>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
