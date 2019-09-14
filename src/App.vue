@@ -3,6 +3,8 @@
         <navigation />
 
         <router-view />
+
+        <footer />
     </div>
 </template>
 
